@@ -1,0 +1,47 @@
+.fontmargin{
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.blog-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    h3.blog-title {
+        @extend .fontmargin;
+    }
+
+    p.blog-content, p.blog-author {
+        @extend .fontmargin;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        //inheritance
+        &.highlighted {
+            background-color: yellow;
+            color: black;
+        }
+    }
+
+    p.blog-content.expanded {
+        max-height: 500px;
+    }
+}
+
+@for $i from 1 through 3 {
+    .btn-#{$i} {
+        background-color: rgb(50 * $i, 100 * $i, 150 * $i);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+
+        &:hover {
+            background-color: darken(rgb(50 * $i, 100 * $i, 150 * $i), 10%);
+        }
+    }
+}

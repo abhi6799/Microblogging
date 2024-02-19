@@ -1,0 +1,63 @@
+.fontmargin, .blog-card p.blog-content, .blog-card p.blog-author, .blog-card h3.blog-title {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.blog-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.blog-card p.blog-content, .blog-card p.blog-author {
+  max-height: 100px;
+  overflow: scroll;
+  transition: max-height 0.3s ease;
+}
+.blog-card p.blog-content.highlighted, .blog-card p.blog-author.highlighted {
+  background-color: yellow;
+  color: black;
+}
+.blog-card p.blog-content.expanded {
+  max-height: 500px;
+}
+
+.btn-1 {
+  background-color: rgb(50, 100, 150);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+.btn-1:hover {
+  background-color: #254b70;
+}
+
+.btn-2 {
+  background-color: rgb(100, 200, 255);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+.btn-2:hover {
+  background-color: #31b6ff;
+}
+
+.btn-3 {
+  background-color: rgb(150, 255, 255);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+.btn-3:hover {
+  background-color: #63ffff;
+}
+
+/*# sourceMappingURL=cards.css.map */

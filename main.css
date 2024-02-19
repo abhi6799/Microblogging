@@ -1,0 +1,140 @@
+/* Styles for the overall layout of the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Header styles for the app's title */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* Styles for the container that holds blog posts */
+.blogs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+/* Styles for buttons used in the app */
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+/* Styles for the blog creation form */
+#create-blog-form {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* Styles for the form's title */
+#create-blog-form h2 {
+  margin: 0 0 20px;
+}
+/* Styles for labels within the form */
+#create-blog-form label {
+  font-weight: bold;
+}
+/* Styles for the form itself */
+#create-blog-form form {
+  display: flex;
+  flex-direction: column;
+}
+/* Styles for labels, inputs, and textareas within the form */
+#create-blog-form form label, #create-blog-form form input, #create-blog-form form textarea {
+  margin: 10px 0;
+}
+#create-blog-form form input, #create-blog-form form textarea {
+  padding: 10px;
+}
+#create-blog-form form button#submit-blog {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.blog-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.blog-card h3.blog-title {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+.blog-card p.blog-content, .blog-card p.blog-author {
+  font-size: 16px;
+  margin: 0 0 10px;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.blog-card p.blog-content.highlighted, .blog-card p.blog-author.highlighted {
+  background-color: yellow;
+  color: black;
+}
+.blog-card p.blog-content.expanded {
+  max-height: 500px;
+}
+
+.btn-1 {
+  background-color: rgb(50, 100, 150);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+.btn-1:hover {
+  background-color: #254b70;
+}
+
+.btn-2 {
+  background-color: rgb(100, 200, 255);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+.btn-2:hover {
+  background-color: #31b6ff;
+}
+/* Styles for button with class "btn-3" and its hover effect */
+.btn-3 {
+  background-color: rgb(150, 255, 255);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+.btn-3:hover {
+  background-color: #63ffff;
+}
+
+.editing .edit-icon {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

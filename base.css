@@ -1,0 +1,16 @@
+/* CSS for the Microblogging App */
+
+/* Styles for the overall layout of the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+

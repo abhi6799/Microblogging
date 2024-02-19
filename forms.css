@@ -1,0 +1,43 @@
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+#create-blog-form {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#create-blog-form h2 {
+  margin: 0 0 20px;
+}
+#create-blog-form label {
+  font-weight: bold;
+}
+#create-blog-form form {
+  display: flex;
+  flex-direction: column;
+}
+#create-blog-form form label, #create-blog-form form input, #create-blog-form form textarea {
+  margin: 10px 0;
+}
+#create-blog-form form input, #create-blog-form form textarea {
+  padding: 10px;
+}
+#create-blog-form form button#submit-blog {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=forms.css.map */
